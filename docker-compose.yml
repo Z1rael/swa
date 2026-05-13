@@ -10,8 +10,8 @@ services:
       - ./build:/workspace/build
     # Optional: Override language selection
     # Uncomment and modify the environment section to build specific languages only
-    # environment:
-    #   LANGUAGES: "DE,EN"
+    environment:
+      LANGUAGES: "EN"
 
   # Optional: Simple HTTP server to view documentation
   server:
@@ -21,7 +21,8 @@ services:
       - "8080:80"
     volumes:
       # Serve generated HTML documentation
-      - ./build:/usr/share/nginx/html:ro
+      - ./build/EN/html/arc42-template-EN.html:/usr/share/nginx/html/index.html:ro
+      - ./build/EN/html/images:/usr/share/nginx/html/images:ro
       # Optional: nginx config for better routing
       # - ./nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on:
