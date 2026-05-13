@@ -27,3 +27,13 @@ See https://docs.arc42.org/section-2/[Architecture Constraints] in the arc42 doc
 
 ****
 endif::arc42help[]
+[options="header",cols="1,2"]
+|===
+|Constraints|Background and/or motivation
+| Coding guidelines for dart | Because we are an international company, we have to use the companies coding guidelines, to easily swap developers in and out of the project and be consistent
+
+| Must run in Kubernetes | To achieve maximum reliability and scalability, has to be containerized and deployed on a global scale
+| English documentation | Everything must be documented in English, so every international development team can understand it. 
+| Pixlr integration | Pixlr is currently the tool planned to be integrated as our photo editing platform.
+| Testing | Use Testdriven development to keep a high test coverage (at least 90%) with Unit-Tests, and further Integration-, E2E- and Chaos Engineering-Testing.
+|===
