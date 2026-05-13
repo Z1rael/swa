@@ -45,6 +45,28 @@ See https://docs.arc42.org/section-1/[Introduction and Goals] in the arc42 docum
 ****
 endif::arc42help[]
 
+_What is *PhotoHive*?_
+
+The main purpose of PhotoHive is creating a social media plattform with a focus on image sharing
+
+*_Main features_*
+
+Account Management (Login, Register)
+Image Upload
+Liking & Commenting Images
+Filtering & Editing Images (ThirdParty integration Pixlr)
+Premium Version with extra features (Cloud storage and more editing)
+
+[options="header",cols="1,4"]
+|===
+|Key|Requirements
+|  | Account Management (Login, Register)
+|  | Image Upload
+|  | Liking & Commenting Images
+|  | Filtering & Editing Images (ThirdParty integration Pixlr)
+|  | Premium Version with extra features (Cloud storage and more editing)
+|===
+
 === Quality Goals
 
 ifdef::arc42help[]
@@ -68,6 +90,16 @@ If you as an architect do not know how the quality of your work will be judged..
 A table with quality goals and concrete scenarios, ordered by priorities
 ****
 endif::arc42help[]
+
+[options="header",cols="1,1,2,4"]
+|===
+|Priority|Key|Quality|Motivation
+| 1 | | Usability | High usability is a must, if we want to be competitive against the existing platform giants.
+| 2 | | Scalability | Because of our size it is important, that we can scale to serve a massive international audience.
+| 3 | | Auditability | Because of our international operation, auditability is important to be able to respect the various laws.
+| 4 | | Reliability | Reliability is important, because nothing is more annoying to an end user than a page that does not work.
+| 5 | | Portability | To reach the largest audience it is important, that the application can run on most devices.
+|===
 
 === Stakeholders
 
@@ -96,6 +128,9 @@ endif::arc42help[]
 [options="header",cols="1,2,2"]
 |===
 |Role/Name|Contact|Expectations
-| _<Role-1>_ | _<Contact-1>_ | _<Expectation-1>_
-| _<Role-2>_ | _<Contact-2>_ | _<Expectation-2>_
+| User | _<Contact-1>_ | Wants to share, edit and interact with images, wants the application to be fast and usable on different platforms
+| Admin | _<Contact-2>_ | Wants to have the necessary tools to moderate the plattform, curating a collection of highlighted images and remove problematic content
+| Developer | _<Contact-3>_ | Wants to deliver modular features fast and safely
+| Influencer | _<Contact-4>_ | Wants to build a attract other users to raise a community and build a business to make a living
+| Legal Team | _<Contact-5>_ | Wants the application to adhere to international & local legal requirements to avoid lawsuits, Especially personal data and licensing (copyright)
 |===
