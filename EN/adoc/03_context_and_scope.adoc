@@ -51,9 +51,29 @@ The title of the table is the name of your system, the three columns contain the
 ****
 endif::arc42help[]
 
-**<Diagram or Table>**
+image::../../images/SWARC_Business_Context.drawio.svg[Business Context Diagram]
 
-**<optionally: Explanation of external domain interfaces>**
+[Attributes]
+|===
+|Element |Description
+
+|Payment Processor
+|Company handling all payment transactions with our customers, e.g. Stripe, Adyen
+
+|Pixlr
+|Application which provides PhotoHive with image editing functionality
+
+|Cloud Provider
+|Service which hosts PhotoHive Kubernetes Cluster, e.g. AWS, MS Azure, GCP
+
+|Cloud Filehosting
+|Service that stores all uploaded images, e.g AWS S3
+
+|Social Media Sites
+|Interface to publish uploaded images directly to popular social media platforms, e.g. Instagram, Facebook, X
+
+|===
+
 
 === Technical Context
 
@@ -73,7 +93,7 @@ together with a mapping table showing the relationships between channels and inp
 ****
 endif::arc42help[]
 
-**<Diagram or Table>**
+image::../../images/SWARC_Technical_Context.drawio.svg[Technical Context Diagram]
 
 **<optionally: Explanation of technical interfaces>**
 

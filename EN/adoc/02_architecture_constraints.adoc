@@ -30,7 +30,7 @@ endif::arc42help[]
 [options="header",cols="1,2"]
 |===
 |Constraints|Background and/or motivation
-| Coding guidelines for dart | Because we are an international company, we have to use the companies coding guidelines, to easily swap developers in and out of the project and be consistent
+| Coding guidelines | Because we are an international company, we have to use the companies coding guidelines, to easily swap developers in and out of the project and be consistent
 
 | Must run in Kubernetes | To achieve maximum reliability and scalability, has to be containerized and deployed on a global scale
 | English documentation | Everything must be documented in English, so every international development team can understand it. 
