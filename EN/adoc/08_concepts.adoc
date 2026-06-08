@@ -48,18 +48,33 @@ See https://docs.arc42.org/section-8/[Concepts] in the arc42 documentation.
 ****
 endif::arc42help[]
 
-=== _<Concept 1>_
+[#CCC_1]
+=== CCC_1 Development - Build-Containers
 
-_<explanation>_
+Every microservice needs to be buildable via containers, to enhance CD-pipelines and make swapping dev-environments easier.
 
+Every repo should contain a docker-compose file and additional Dockerfiles (named <Module>.Dockerfile, if there are multiple) as needed.
 
+If multiple local environments are required, these should be implemented via docker-compose *profiles* and documented in the *README* of the project.
 
-=== _<Concept 2>_
+[#CCC_2]
+=== CCC_2 Authentication & Authorization - External identity provider & JWT Token
 
-_<explanation>_
+For the autentication an external identity provider will be used.
 
-...
+If there is an issue with the authentication the user should be redirected to the login page of this identity provider, so that a login can be tried.
 
-=== _<Concept n>_
+The identity provider sets a HttpOnly, Secure, Cookie containing a JWT-Token which includes the user and his various permissions.
 
-_<explanation>_
+These permissions are then to be used in the applications for the purpose of authorization.
+
+[#CCC_3]
+=== CCC_3 Communication and Integration - Message Brokers
+
+Because of the microservices architecture, a strong tool for the communication between the various services is required.
+
+For this Apache Kafka is to be used as an inbetween.
+
+Internal requests between services and also request from the user clients via the API Gateway should pass through the message broker to allow for strong retryability and also upgradeability of the various services.
+
+Exceptions can be made for idempotent request (especially GET), but these connections should be specifically documented.

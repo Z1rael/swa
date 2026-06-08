@@ -39,6 +39,9 @@ endif::arc42help[]
 |2FA
 |<definition-2>
 
+|API Gateway
+|<definition-2>
+
 |Apache Kafka
 |<definition-2>
 
@@ -48,10 +51,16 @@ endif::arc42help[]
 |Cloud Service
 |<definition>
 
+|Cookie
+|<definition>
+
 |loosely coupled
 |<definition>
 
 |Dart (Language)
+|<definition-2>
+
+|(external) Identity Provider
 |<definition-2>
 
 |Java (Language)
@@ -70,6 +79,12 @@ endif::arc42help[]
 |<definition-2>
 
 |HashiCorp Vault
+|<definition-2>
+
+|Idempotent
+|<definition-2>
+
+|JWT-Token
 |<definition-2>
 
 |Kubernetes
