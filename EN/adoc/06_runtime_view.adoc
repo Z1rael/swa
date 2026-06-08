@@ -41,7 +41,7 @@ endif::arc42help[]
 
 === RV_1 Image Upload
 
-image::../../images/SWARC_Runtime_Image_Upload.drawio.svg[Runtime Diagram of the image upload flow]
+image::../../images/SWARC_Runtime_Image_Upload.drawio.png[Runtime Diagram of the image upload flow]
 
 . Authenticated user calls **upload** endpoint
 . **Image controller** maps / validates request and image data
@@ -55,7 +55,7 @@ image::../../images/SWARC_Runtime_Image_Upload.drawio.svg[Runtime Diagram of the
 
 === RV_2 Image Search 
 
-image::../../images/SWARC_Runtime_Image_Search.drawio.svg[Runtime Diagram of the image search flow]
+image::../../images/SWARC_Runtime_Image_Search.drawio.png[Runtime Diagram of the image search flow]
 
 . Authenticated user calls **search** enpoint
 . **Image controller** maps validates request parameters and forwards it to **Image Service**  

@@ -5,7 +5,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 === Business Context
 
-image::../../images/SWARC_Business_Context.drawio.svg[Business Context Diagram]
+image::../../images/SWARC_Business_Context.drawio.png[Business Context Diagram]
 
 [cols="1,2"]
 |===
@@ -31,4 +31,4 @@ image::../../images/SWARC_Business_Context.drawio.svg[Business Context Diagram]
 
 === Technical Context
 
-image::../../images/SWARC_Technical_Context.drawio.svg[Technical Context Diagram]
+image::../../images/SWARC_Technical_Context.drawio.png[Technical Context Diagram]

@@ -60,7 +60,7 @@ endif::arc42help[]
 
 This diagram shows how PhotoHive is deployed as a microservice-based application.
 
-image::../../images/SWARC_Deployment_Diagram.drawio.svg[Deployment Diagram PhotoHive]
+image::../../images/SWARC_Deployment_Diagram.drawio.png[Deployment Diagram PhotoHive]
 
 Motivation::
 

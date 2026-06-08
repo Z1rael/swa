@@ -67,7 +67,7 @@ In the best case you will get away with examples or simple signatures.
 ****
 endif::arc42help[]
 
-image::../../images/SWARC_Building_Block_1.drawio.svg[Whitebox PhotoHive]
+image::../../images/SWARC_Building_Block_1.drawio.png[Whitebox PhotoHive]
 
 Motivation:: 
 
@@ -131,7 +131,7 @@ endif::arc42help[]
 
 [#BB_1_Images]
 ==== BB_1 Images
-image::../../images/SWARC_Building_Block_2.drawio.svg[PhotoHive Images]
+image::../../images/SWARC_Building_Block_2.drawio.png[PhotoHive Images]
 
 The dotted lines show the general request flows, because the majority of the communication is handled via Apache Kafka as a message broker.
 
@@ -176,7 +176,7 @@ part of arc42 for additional levels.
 endif::arc42help[]
 
 ==== BB_1.1 Search-Service
-image::../../images/SWARC_Building_Block_3.drawio.svg[Images SearchService]
+image::../../images/SWARC_Building_Block_3.drawio.png[Images SearchService]
 
 Motivation:: 
 

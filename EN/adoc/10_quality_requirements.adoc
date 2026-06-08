@@ -31,7 +31,7 @@ endif::arc42help[]
 
 _Note: The (QG_X) in the following table correspond to top level quality requirements from_ <<Quality Goals>>.
 
-image::../../images/SWARC_Quality_Tree.drawio.svg[Quality Tree Diagram]
+image::../../images/SWARC_Quality_Tree.drawio.png[Quality Tree Diagram]
 
 ifdef::arc42help[]
 [role="arc42help"]
