@@ -42,7 +42,7 @@ See https://docs.arc42.org/section-5/[Building Block View] in the arc42 document
 ****
 endif::arc42help[]
 
-=== Whitebox PhotoHive
+=== Level 1 PhotoHive
 
 ifdef::arc42help[]
 [role="arc42help"]

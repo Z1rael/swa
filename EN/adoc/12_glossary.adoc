@@ -93,9 +93,6 @@ endif::arc42help[]
 |Message Broker
 |<definition-1>
 
-|message-queue
-|<definition>
-
 |Metadata
 |<definition-1>
 

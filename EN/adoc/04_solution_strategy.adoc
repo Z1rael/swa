@@ -14,6 +14,6 @@ ifndef::imagesdir[:imagesdir: ../images]
 
 | Fast global application | Cloud deployment distributed across various locations worldwide|
 
-| Continuous Deployment | ReliabilTesting Strategies: TDD, A/B-Testing, Chaos-Engineering|
+| Continuous Deployment | Testing Strategies: TDD, A/B-Testing, Chaos-Engineering|
 
 |===
