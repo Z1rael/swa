@@ -3,25 +3,39 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-technical-risks]]
 == Risks and Technical Debts
 
+=== Technical risks
 
-ifdef::arc42help[]
-[role="arc42help"]
-****
-.Contents
-A list of identified technical risks or technical debts, ordered by priority
+[Attributes]
+|===
+|Risk |Description
 
-.Motivation
-“Risk management is project management for grown-ups” (Tim Lister, Atlantic Systems Guild.) 
+|Flutter abandoned
+|Google has somewhat of a history of abandoning it’s projects. 
+Evaluating possible migration scenarios to e.g. web-native may be more sustainable.
 
-This should be your motto for systematic detection and evaluation of risks and technical debts in the architecture, which will be needed by management stakeholders (e.g. project managers, product owners) as part of the overall risk analysis and measurement planning.
+|Cloud - Cost Management
+|After deployment to one cloud provider, swapping the provider can be difficult, if the provider raises the prices. 
+Using Infrastructure as Code and keeping things generic eases a possible migration.
 
-.Form
-List of risks and/or technical debts, probably including suggested measures to minimize, mitigate or avoid risks or reduce technical debts.
+|High Dependecy on Kafka MQ
+|The system heavily relies on Kafka MQ for any internal communication. If the project is abandoned or a breaking bug is implemented it could present a detrimental threat to our operation. Forcing us to refactor big sections of out code base.
 
+|Pixlr dependency
+|The platform relies on Pixlr to be able to edit photos, if the service is unavailable or discontinued it can impact a crucial functionality of our system. 
 
-.Further Information
+|===
 
-See https://docs.arc42.org/section-11/[Risks and Technical Debt] in the arc42 documentation.
+=== Business or domain risks
 
-****
-endif::arc42help[]
+[Attributes]
+|===
+|Risk |Description
+
+|Low Userbase
+|The product is reliant on user interactions and uploads. In case of problems of attracting a big userbase the popularity can dwindle fast, resulting in costs could be higher than the generated income.
+
+|Subscription functions not well received
+|If the pay-to-use functionality does not offer the benefits our users are willing to pay for, our financing plan could fail.
+
+|===
+

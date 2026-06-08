@@ -6,5 +6,5 @@
 :toc:
 
 // where are images located?
-:imagesdir: ./images
+:imagesdir: ../../images
 :arc42help:
