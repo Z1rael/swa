@@ -17,8 +17,8 @@ Evaluating possible migration scenarios to e.g. web-native may be more sustainab
 |After deployment to one cloud provider, swapping the provider can be difficult, if the provider raises the prices. 
 Using Infrastructure as Code and keeping things generic eases a possible migration.
 
-|High Dependecy on Kafka MQ
-|The system heavily relies on Kafka MQ for any internal communication. If the project is abandoned or a breaking bug is implemented it could present a detrimental threat to our operation. Forcing us to refactor big sections of out code base.
+|High Dependecy on Apache Kafka
+|The system heavily relies on Apache Kafka for any internal communication. If the project is abandoned or a breaking bug is implemented it could present a detrimental threat to our operation. Forcing us to refactor big sections of out code base.
 
 |Pixlr dependency
 |The platform relies on Pixlr to be able to edit photos, if the service is unavailable or discontinued it can impact a crucial functionality of our system. 
