@@ -45,8 +45,23 @@ endif::arc42help[]
 |Cloud
 |<definition-2>
 
+|Cloud Service
+|<definition>
+
+|loosely coupled
+|<definition>
+
 |Dart (Language)
 |<definition-2>
+
+|Java (Language)
+|<definition>
+
+|Springboot
+|<definition>
+
+|API
+|<defintion>
 
 |Elastic Search
 |<definition-2>
@@ -63,14 +78,41 @@ endif::arc42help[]
 |Message Broker
 |<definition-1>
 
+|message-queue
+|<definition>
+
 |Metadata
 |<definition-1>
 
 |Microservices
 |<definition-1>
 
+|Continuous Deployment 
+|<definition>
+
+|TDD
+|<definition>
+
+|A/B-Testing
+|<definition>
+
+|Chaos-Engineeringity 
+|<definition>
+
 |MongoDB
 |<definition-2>
+
+|PostgreDB
+|<definition>
+
+|Data-Storage
+|<defiintion>
+
+|Image-Storage
+|<defiintion>
+
+|Data Buckets
+|<defiintion>
 
 |Pixlr
 |<definition-2>

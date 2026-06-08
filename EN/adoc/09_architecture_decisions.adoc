@@ -61,12 +61,4 @@ better user security
 | Use message queues to handle the communication between services. | We will be using Apache Kafka as our message-queue. | This results in: + high throughput & fault-tolerance
 - complex setup
 resource intensive
-
-
-
-
-
-
-
-
 |===
