@@ -42,7 +42,7 @@ See https://docs.arc42.org/section-5/[Building Block View] in the arc42 document
 ****
 endif::arc42help[]
 
-=== Whitebox Overall System
+=== Whitebox PhotoHive
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -67,19 +67,33 @@ In the best case you will get away with examples or simple signatures.
 ****
 endif::arc42help[]
 
-_**<Overview Diagram>**_
+image::../../images/SWARC_Building_Block_1.drawio.svg[Whitebox PhotoHive]
 
-Motivation::
+Motivation:: 
 
-_<text explanation>_
+We used functional decomposition to separate responsibilities of the various services and connected them via Kafka to enjoy the various benefits of a microservices architecture.
 
+The building blocks in this image do not include all services and are only rough groupings of several services. 
 
 Contained Building Blocks::
-_<Description of contained building block (black boxes)>_
-
+[options="header",cols="1,4"]
+|===
+|Building block|Description
+| Images | Image searching, viewing, uploading and editing via third-party-apis. 
+| Social-Functions | Liking, Commenting and various other social functions.
+| Usermanagement | Provides various features related to the management of accounts.
+Also includes tools related to the administration of the users.
+| Copyright | Includes various tools to check for and verify potential copyright issues. 
+Also includes workflows for dealing with copyright issues.
+|===
 Important Interfaces::
-_<Description of important interfaces>_
-
+[options="header",cols="1,4"]
+|===
+|Interface|Description
+| Authentication | Used to handle multiple login-methods like thrid-party-login and 2FA. 
+| Payment | Handles the payments for subscriptions.
+| PIXLR | Provides various features to edit images.
+|===
 ifdef::arc42help[]
 [role="arc42help"]
 ****
@@ -102,56 +116,6 @@ Its headline is the name of the black box.
 ****
 endif::arc42help[]
 
-==== <Name black box 1>
-
-ifdef::arc42help[]
-[role="arc42help"]
-****
-Here you describe <black box 1>
-according the the following black box template:
-
-* Purpose/Responsibility
-* Interface(s), when they are not extracted as separate paragraphs. This interfaces may include qualities and performance characteristics.
-* (Optional) Quality-/Performance characteristics of the black box, e.g.availability, run time behavior, ....
-* (Optional) directory/file location
-* (Optional) Fulfilled requirements (if you need traceability to requirements).
-* (Optional) Open issues/problems/risks
-
-****
-endif::arc42help[]
-
-_<Purpose/Responsibility>_
-
-_<Interface(s)>_
-
-_<(Optional) Quality/Performance Characteristics>_
-
-_<(Optional) Directory/File Location>_
-
-_<(Optional) Fulfilled Requirements>_
-
-_<(optional) Open Issues/Problems/Risks>_
-
-
-
-
-==== <Name black box 2>
-
-_<black box template>_
-
-==== <Name black box n>
-
-_<black box template>_
-
-
-==== <Name interface 1>
-
-...
-
-==== <Name interface m>
-
-
-
 === Level 2
 
 ifdef::arc42help[]
@@ -165,7 +129,30 @@ Leave out normal, simple, boring or standardized parts of your system
 ****
 endif::arc42help[]
 
-==== White Box _<building block 1>_
+==== White Box - Images BB_1
+image::../../images/SWARC_Building_Block_2.drawio.svg[Whitebox PhotoHive]
+
+The dotted lines show the general request flows, because the majority of the communication is handled via Apache Kafka as a message queue.
+
+Motivation:: 
+
+The internal structure of Images follows a functional decomposition: 
+- overall image handling
+- metadata generation
+- thumbnail generation
+- metadata handling
+- search
+
+Contained Building Blocks::
+[options="header",cols="1,4"]
+|===
+|Building block|Description
+| Image-Service | This is the main-service for various image-related functions, which further delegates a lot of it's tasks to other services. 
+| Image-Processing-Service | Handles the processing of the uploaded images. It manages the file-upload, metadata generation and further also the thumbnail generation.
+| Thumbnail-Generator-Service | Handles the generation of thumbnails in various formats and sizes.
+| Metadata-Repository | Is the main class responsible for the management of the image-properties. 
+| Search-Service | Search-Requests are handled via this service by checking against ElasticSearch and the metadata. 
+|===
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -173,21 +160,6 @@ ifdef::arc42help[]
 ...describes the internal structure of _building block 1_.
 ****
 endif::arc42help[]
-
-_<white box template>_
-
-==== White Box _<building block 2>_
-
-
-_<white box template>_
-
-...
-
-==== White Box _<building block m>_
-
-
-_<white box template>_
-
 
 
 === Level 3
@@ -202,24 +174,28 @@ part of arc42 for additional levels.
 ****
 endif::arc42help[]
 
-==== White Box <_building block x.1_>
+==== White Box Search-Service BB_1.1
+image::../../images/SWARC_Building_Block_3.drawio.svg[Whitebox PhotoHive]
 
-ifdef::arc42help[]
-[role="arc42help"]
-****
-Specifies the internal structure of _building block x.1_.
-****
-endif::arc42help[]
+Motivation:: 
 
-_<white box template>_
+The internal structure of Images follows a layered decomposition: 
+- handling incoming requests (_SearchController_)
+- doing the search (_SearchService_)
+- the results of a search (_ImageSearchResult_, etc.)
 
-
-==== White Box <_building block x.2_>
-
-_<white box template>_
-
-
-
-==== White Box <_building block y.1_>
-
-_<white box template>_
+Contained Building Blocks::
+[options="header",cols="1,4"]
+|===
+|Building block|Description
+| SearchController | Controller which handles incoming requests.
+| SearchService | Service which handles the collection of the required data.
+| ImageSearchResult | Aggregated result of the search including search-metadata and paging.
+| Paging | Describing which results where found and how many are available.
+| QueryMetadata | Contains metadata regarding the search itself.
+| Image | One of the images which was found with it's metadata.
+| Image-File | Link to the file of the image itself.
+| Keywords | Keywords which could be searched to find a specific image.
+| Comment | Comments which where added to this image.
+| Like | Likes which where added to this image.
+|===
