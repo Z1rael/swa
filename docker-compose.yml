@@ -21,8 +21,8 @@ services:
       - "8080:80"
     volumes:
       # Serve generated HTML documentation
-      - ./build/EN/html/arc42-template-EN.html:/usr/share/nginx/html/index.html:ro
-      - ./build/EN/html/images:/usr/share/nginx/html/images:ro
+      - ./build/EN/html/arc42-template-EN.html:/usr/share/nginx/html/index.html:Z
+      - ./build/EN/html/images:/usr/share/nginx/html/images:Z
       # Optional: nginx config for better routing
       # - ./nginx.conf:/etc/nginx/nginx.conf:ro
     depends_on:

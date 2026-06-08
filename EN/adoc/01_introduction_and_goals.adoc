@@ -128,9 +128,24 @@ endif::arc42help[]
 [options="header",cols="1,2,2"]
 |===
 |Role/Name|Contact|Expectations
-| User | _<Contact-1>_ | Wants to share, edit and interact with images, wants the application to be fast and usable on different platforms
-| Admin | _<Contact-2>_ | Wants to have the necessary tools to moderate the plattform, curating a collection of highlighted images and remove problematic content
-| Developer | _<Contact-3>_ | Wants to deliver modular features fast and safely
-| Influencer | _<Contact-4>_ | Wants to build a attract other users to raise a community and build a business to make a living
-| Legal Team | _<Contact-5>_ | Wants the application to adhere to international & local legal requirements to avoid lawsuits, Especially personal data and licensing (copyright)
+
+| User
+| End users (students / public users)
+| Wants to share, edit and interact with images, wants the application to be fast and usable on different platforms
+
+| Admin
+| System administrators / moderation team (FH Technikum Wien)
+| Wants to have the necessary tools to moderate the platform, curate a collection of highlighted images and remove problematic content
+
+| Developer
+| SWA development team (FH Technikum Wien)
+| Wants to deliver modular features fast and safely, maintain a clean and extensible architecture
+
+| Influencer
+| Content creators / social media users
+| Wants to build an audience, attract other users, grow a community and potentially monetize content
+
+| Legal Team
+| University compliance / legal advisory (GDPR / copyright compliance)
+| Wants the application to adhere to international and local legal requirements to avoid lawsuits, especially regarding personal data and licensing (copyright)
 |===
