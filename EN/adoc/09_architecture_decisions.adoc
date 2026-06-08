@@ -36,29 +36,30 @@ There you will find links and examples about ADR.
 ****
 endif::arc42help[]
 
-[options="header",cols="1,2,1"]
+[options="header",cols="1,1,1"]
 |===
 | Context | Decision | Consequences |
 
-The application must be scalable and maintainable. | Microservices | Better scalability and faster development, but higher operational complexity. 
-
-| The application should be available on as many devices as possible | Use a Web Application. | Runs on most platforms without installation, but has limited access to native features.
+The application should be available on as many devices as possible | Use a Web Application. | Runs on most platforms without installation, but has limited access to native features.
 
 | The hosting solution should be cost-effective and quick to deploy. | We will be using a Cloud Service. | Lower upfront costs and faster setup, but creates dependency on the provider.
 
-| Because we have so many loosely coupled independent services | We will create containers for each service and deploy them on kubernetes. This is going to be the standard platform. | This results in: + better scalability and resilience
-automated deployment
-build in service discovery
-Resource optimization
--
-operational complexity
-requires expertise
+| Because we have so many loosely coupled independent services | We will create containers for each service and deploy them on kubernetes. This is going to be the standard platform. | This results in: +
++ better scalability and resilience +
++ automated deployment +
++ build in service discovery +
++ Resource optimization +
+- operational complexity +
+- requires expertise
 
-| Because of our large user base, we want high security standards for Authentication, but also allow easy Login-Options. | We will use MFA and Google, Facebook, Apple, X as possible login options. | This results in: + easier signup and login for users
-better user security
+| Because of our large user base, we want high security standards for Authentication, but also allow easy Login-Options. | We will use MFA and Google, Facebook, Apple, X as possible login options. | This results in: +
++ easier signup and login for users +
++ better user security +
 - higher development costs
 
-| Use a message broker to handle the communication between services. | We will be using Apache Kafka as our message broker. | This results in: + high throughput & fault-tolerance
-- complex setup
-resource intensive
+| Use a message broker to handle the communication between services. | We will be using Apache Kafka as our message broker. | This results in: +
++ high throughput +
++ high fault-tolerance +
+- complex setup +
+- resource intensive
 |===
