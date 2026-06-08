@@ -45,9 +45,9 @@ image::../../images/SWARC_Runtime_Image_Upload.drawio.svg[Runtime Diagram of the
 
 . Authenticated user calls **upload** endpoint
 . **Image controller** maps / validates request and image data
-. **Image service** splits image from metadata and sends them to **mq broker**
+. **Image service** splits image from metadata and sends them to **message broker**
 . **Image-Processing** service recceives image and tries to send it to **object storage**
-. If successful receives **link to stored image** and sends it to **mq broker**
+. If successful receives **link to stored image** and sends it to **message broker**
 . **Image repository** now has required data and **stores metadata and file link** in database
 . Transaction was successful and user receives a success message
 
@@ -59,7 +59,7 @@ image::../../images/SWARC_Runtime_Image_Search.drawio.svg[Runtime Diagram of the
 
 . Authenticated user calls **search** enpoint
 . **Image controller** maps validates request parameters and forwards it to **Image Service**  
-. Search request is sent to **Search Service** via Message Queue
+. Search request is sent to **Search Service** via **message broker**
 . **Elastic Search** service executes search and returns results to **Search Service** 
 . **Image Service** receives results and retrieves image metadata from **Image Repository**
 . Results get returned to user
