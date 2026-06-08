@@ -20,10 +20,10 @@ Contained Building Blocks::
 |===
 |Building block|Description
 | <<BB_1_Images>> | Image searching, viewing, uploading and editing via third-party-apis. 
-| <<BB_2_Social-Functions>> | Liking, Commenting and various other social functions.
-| <<BB_3_Usermanagement>> | Provides various features related to the management of accounts.
+| BB_2_Social-Functions | Liking, Commenting and various other social functions.
+| BB_3_Usermanagement | Provides various features related to the management of accounts.
 Also includes tools related to the administration of the users.
-| <<BB_4_Copyright>> | Includes various tools to check for and verify potential copyright issues. 
+| BB_4_Copyright | Includes various tools to check for and verify potential copyright issues. 
 Also includes workflows for dealing with copyright issues.
 |===
 Important Interfaces::

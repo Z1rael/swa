@@ -19,7 +19,11 @@ Mapping of Building Blocks to Infrastructure::
 [options="header",cols="1,4"]
 |===
 |Building block|Infrastructure
-| Cluster Nodes: <<BB_1_Images>>, <<BB_2_Social-Functions>>, <<BB_3_Usermanagement>>, <<BB_4_Copyright>>  | Are deployed as Pods inside the cluster to enable scaling.
+| Cluster Nodes: +
+ <<BB_1_Images>> +
+ BB_2_Social-Functions +
+ BB_3_Usermanagement +
+ BB_4_Copyright  | Are deployed as Pods inside the cluster to enable scaling.
 | API Gateway | Are also deployed as Pods inside the cluster to enable scaling. They handle the communication between the clients and the internal Cluster Nodes.
 These nodes are the only ones which are reachable directly by the clients via the internet. 
 | HashiCorp Vault | Is used to inject various secrets into the containers, where they are needed.

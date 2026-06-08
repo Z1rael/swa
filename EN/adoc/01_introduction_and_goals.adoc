@@ -11,12 +11,6 @@ The main purpose of PhotoHive is creating a social media plattform with a focus 
 
 *_Main features_*
 
-Account Management (Login, Register)
-Image Upload
-Liking & Commenting Images
-Filtering & Editing Images (ThirdParty integration Pixlr)
-Premium Version with extra features (Cloud storage and more editing)
-
 [options="header",cols="1,4"]
 |===
 |Key|Requirements

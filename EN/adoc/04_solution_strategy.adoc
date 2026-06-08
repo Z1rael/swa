@@ -3,7 +3,7 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-solution-strategy]]
 == Solution Strategy
 
-[cols="1,2"]
+[options="header",cols="1,2"]
 |===
 
 |Goal/Requirements| Architectural Approach
