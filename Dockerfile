@@ -19,7 +19,7 @@ RUN chmod +x gradlew
 
 # Create version.properties files for all languages if they don't exist
 # This ensures the build doesn't fail on missing version files
-RUN for lang in CZ DE EN ES FR IT NL PT RU UKR ZH; do \
+RUN for lang in EN; do \
     if [ ! -f "$lang/version.properties" ]; then \
       mkdir -p "$lang" && \
       echo "revnumber=9.0" > "$lang/version.properties" && \
@@ -46,28 +46,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY --from=builder /workspace/build ./build
 
 # Copy all language directories with source files and version.properties for validation
-COPY --from=builder /workspace/CZ/adoc ./CZ/adoc
-COPY --from=builder /workspace/CZ/version.properties ./CZ/version.properties
-COPY --from=builder /workspace/DE/adoc ./DE/adoc
-COPY --from=builder /workspace/DE/version.properties ./DE/version.properties
 COPY --from=builder /workspace/EN/adoc ./EN/adoc
 COPY --from=builder /workspace/EN/version.properties ./EN/version.properties
-COPY --from=builder /workspace/ES/adoc ./ES/adoc
-COPY --from=builder /workspace/ES/version.properties ./ES/version.properties
-COPY --from=builder /workspace/FR/adoc ./FR/adoc
-COPY --from=builder /workspace/FR/version.properties ./FR/version.properties
-COPY --from=builder /workspace/IT/adoc ./IT/adoc
-COPY --from=builder /workspace/IT/version.properties ./IT/version.properties
-COPY --from=builder /workspace/NL/adoc ./NL/adoc
-COPY --from=builder /workspace/NL/version.properties ./NL/version.properties
-COPY --from=builder /workspace/PT/adoc ./PT/adoc
-COPY --from=builder /workspace/PT/version.properties ./PT/version.properties
-COPY --from=builder /workspace/RU/adoc ./RU/adoc
-COPY --from=builder /workspace/RU/version.properties ./RU/version.properties
-COPY --from=builder /workspace/UKR/adoc ./UKR/adoc
-COPY --from=builder /workspace/UKR/version.properties ./UKR/version.properties
-COPY --from=builder /workspace/ZH/adoc ./ZH/adoc
-COPY --from=builder /workspace/ZH/version.properties ./ZH/version.properties
 
 # Copy gradle files for validation tasks
 COPY --from=builder /workspace/gradle ./gradle

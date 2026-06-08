@@ -6,6 +6,8 @@ services:
       dockerfile: Dockerfile.build
     container_name: arc42-builder
     volumes:
+      # Mount source directory for live updates
+      - .:/workspace:Z
       # Mount output directory to host for easy access
       - ./build:/workspace/build:Z
     # Optional: Override language selection
