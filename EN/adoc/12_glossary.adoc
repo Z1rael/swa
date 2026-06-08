@@ -37,105 +37,96 @@ endif::arc42help[]
 |Term |Definition
 
 |2FA
-|<definition-2>
+|Two-Factor Authentication (2FA) is a security method that requires two forms of verification to access an account.
 
 |API Gateway
-|<definition-2>
+|A single entry point that manages, routes, and secures requests between clients and backend services.
 
 |Apache Kafka
-|<definition-2>
+|A distributed event streaming platform used for building real-time data pipelines and streaming applications.
 
 |Cloud
-|<definition-2>
+|A computing model where storage, servers, and services are delivered over the internet instead of local infrastructure.
 
 |Cloud Service
-|<definition>
+|A cloud service is any IT infrastructure, platform, or software hosted by a third-party provider and accessed over the internet.
 
 |Cookie
-|<definition>
+|A small piece of data stored in a user's browser to remember information between requests.
 
-|loosely coupled
-|<definition>
+|Loosely Coupled
+|A design approach where system components have minimal dependencies on each other.
 
 |Dart (Language)
-|<definition-2>
+|A programming language developed by Google for building web, mobile, desktop, and server applications.
 
 |(external) Identity Provider
-|<definition-2>
+|A third-party service that authenticates users and provides identity verification to other systems.
 
 |Java (Language)
-|<definition>
+|A high-level, object-oriented programming language used for building cross-platform applications.
 
-|Springboot
-|<definition>
+|Spring Boot
+|A Java framework for building stand-alone, production-ready applications with minimal configuration.
 
 |API
-|<defintion>
+|A set of rules and interfaces that allows software systems to communicate with each other.
 
-|Elastic Search
-|<definition-2>
-
-|Feature flag
-|<definition-2>
+|Elasticsearch
+|A distributed search and analytics engine for storing, searching, and analyzing data.
 
 |Flutter
-|<definition-2>
+|An open-source UI framework by Google for building cross-platform applications from a single codebase.
 
 |HashiCorp Vault
-|<definition-2>
+|A platform for securely storing, managing, and controlling access to secrets and encryption keys.
 
 |Idempotent
-|<definition-2>
+|A property where repeating the same operation produces the same result as performing it once.
 
 |JWT-Token
-|<definition-2>
+|A compact, signed token format used to securely transmit authentication and authorization data.
 
 |Kubernetes
-|<definition-2>
+|An open-source platform for automating the deployment, scaling, and management of containerized applications.
 
 |Message Broker
-|<definition-1>
+|A software component that enables communication and message exchange between distributed systems.
 
 |Metadata
-|<definition-1>
+|Data that describes, identifies, or provides information about other data.
 
 |Microservices
-|<definition-1>
+|An architectural style that structures an application as a collection of independent, loosely coupled services.
 
-|Mock
-|<definition-1>
-
-|Continuous Deployment 
-|<definition>
+|Continuous Deployment
+|A software practice where code changes are automatically released to production after passing tests.
 
 |TDD
-|<definition>
+|Test-Driven Development (TDD) is a development approach where tests are written before the application code.
 
 |A/B-Testing
-|<definition>
+|A method of comparing two versions of a feature to determine which performs better.
 
-|Chaos-Engineeringity 
-|<definition>
+|Chaos Engineering
+|A practice of intentionally introducing failures to test and improve system resilience.
 
 |MongoDB
-|<definition-2>
+|A document-oriented NoSQL database designed for scalability and flexible data structures.
 
-|PostgreDB
-|<definition>
+|PostgreSQL
+|An open-source relational database known for reliability, performance, and advanced features.
 
-|Data-Storage
-|<defiintion>
+|Data Storage
+|A system or service used to persistently store and retrieve digital data.
 
-|Image-Storage
-|<defiintion>
+|Image Storage
+|A storage solution optimized for storing, managing, and serving image files.
 
 |Data Buckets
-|<defiintion>
+|Logical containers used to store and organize files or objects in cloud storage systems.
 
 |Pixlr
-|<definition-2>
-
-|Replica
-|<definition-2>
+|A web-based image editing and graphic design application.
 
 |===
