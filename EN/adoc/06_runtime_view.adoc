@@ -39,7 +39,7 @@ See https://docs.arc42.org/section-6/[Runtime View] in the arc42 documentation.
 ****
 endif::arc42help[]
 
-=== <Runtime Scenario 1>
+=== RV_1 Image Upload
 
 image::../../images/SWARC_Runtime_Image_Upload.drawio.svg[Runtime Diagram of the image upload flow]
 
@@ -53,7 +53,7 @@ image::../../images/SWARC_Runtime_Image_Upload.drawio.svg[Runtime Diagram of the
 
 * In case of object storage being unavailable the system tries to retry action with exponential backoff. If retries are exhausted user is informed of the failed transaction.
 
-=== <Runtime Scenario 2>
+=== RV_2 Image Search 
 
 image::../../images/SWARC_Runtime_Image_Search.drawio.svg[Runtime Diagram of the image search flow]
 
