@@ -26,6 +26,8 @@ Also includes tools related to the administration of the users.
 | BB_4_Copyright | Includes various tools to check for and verify potential copyright issues. 
 Also includes workflows for dealing with copyright issues.
 |===
+
+<<<
 Important Interfaces::
 [options="header",cols="1,4"]
 |===
@@ -52,6 +54,7 @@ The internal structure of Images follows a functional decomposition:
 - metadata handling
 - search
 
+<<<
 Contained Building Blocks::
 [options="header",cols="1,4"]
 |===
@@ -68,6 +71,7 @@ Contained Building Blocks::
 ==== BB_1.1 Search-Service
 image::../../images/SWARC_Building_Block_3.drawio.png[Images SearchService]
 
+<<<
 Motivation:: 
 
 The internal structure of Images follows a layered decomposition: 

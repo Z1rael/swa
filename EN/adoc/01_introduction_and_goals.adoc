@@ -33,6 +33,7 @@ The main purpose of PhotoHive is creating a social media plattform with a focus 
 | 5 | QG_5 | Portability | To reach the largest audience it is important, that the application can run on most devices.
 |===
 
+<<<
 === Stakeholders
 
 [options="header",cols="1,2,2"]

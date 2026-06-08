@@ -17,6 +17,7 @@ image::../../images/SWARC_Runtime_Image_Upload.drawio.png[Runtime Diagram of the
 
 * In case of object storage being unavailable the system tries to retry action with exponential backoff. If retries are exhausted user is informed of the failed transaction.
 
+<<<
 === RV_2 Image Search 
 
 image::../../images/SWARC_Runtime_Image_Search.drawio.png[Runtime Diagram of the image search flow]

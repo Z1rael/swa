@@ -14,6 +14,7 @@ Most of the deployed services are deployed in a Kubernetes cluster to enable str
 The services inside the cloud are deployed on multiple nodes accross the world to improve performance world wide.
 Communication between the services is generally handled via Apache Kafka as a message broker to further improve the availabilty.
 
+<<<
 Mapping of Building Blocks to Infrastructure::
 
 [options="header",cols="1,4"]

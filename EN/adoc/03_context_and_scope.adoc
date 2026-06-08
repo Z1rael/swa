@@ -28,7 +28,7 @@ image::../../images/SWARC_Business_Context.drawio.png[Business Context Diagram]
 
 |===
 
-
+<<<
 === Technical Context
 
 image::../../images/SWARC_Technical_Context.drawio.png[Technical Context Diagram]

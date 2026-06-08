@@ -33,6 +33,7 @@ A tester needs to mock a service for a new integration test.
 
 The application should be available worldwide and be installable on a variety of devices.
 
+<<<
 .*Trigger*
 
 A user installs or opens the application/website.
