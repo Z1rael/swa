@@ -27,7 +27,11 @@ Since quality requirements will have a lot of influence on architectural decisio
 endif::arc42help[]
 
 
-=== Quality Requirements Overview
+=== Quality Tree
+
+_Note: The (QG_X) in the following table correspond to top level quality requirements from_ <<Quality Goals>>.
+
+image::../../images/SWARC_Quality_Tree.drawio.svg[Quality Tree Diagram]
 
 ifdef::arc42help[]
 [role="arc42help"]
@@ -110,3 +114,74 @@ See https://quality.arc42.org[the Q42 quality model website] for detailed exampl
 
 
 endif::arc42help[]
+
+
+==== SC_1: Mocks exist for 80% of services
+
+.*Context*
+
+
+
+.*Trigger*
+
+
+
+.*Acceptance Criteria*
+
+
+
+==== SC_2: App available on 80% of devices
+
+.*Context*
+
+
+
+.*Trigger*
+
+
+
+.*Acceptance Criteria*
+
+
+
+==== SC_3: Failed-deployment rollback after 60 seconds
+
+.*Context*
+
+
+
+.*Trigger*
+
+
+
+.*Acceptance Criteria*
+
+
+
+==== SC_4: Replica creation if CPU load >80%
+
+.*Context*
+
+
+
+.*Trigger*
+
+
+
+.*Acceptance Criteria*
+
+
+
+==== SC_5: Disable feature within 15 seconds
+
+.*Context*
+
+
+
+.*Trigger*
+
+
+
+.*Acceptance Criteria*
+
+

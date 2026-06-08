@@ -20,11 +20,11 @@ Premium Version with extra features (Cloud storage and more editing)
 [options="header",cols="1,4"]
 |===
 |Key|Requirements
-|  | Account Management (Login, Register)
-|  | Image Upload
-|  | Liking & Commenting Images
-|  | Filtering & Editing Images (ThirdParty integration Pixlr)
-|  | Premium Version with extra features (Cloud storage and more editing)
+| MF_1 | Account Management (Login, Register)
+| MF_2 | Image Upload
+| MF_3 | Liking & Commenting Images
+| MF_4 | Filtering & Editing Images (ThirdParty integration Pixlr)
+| MF_5 | Premium Version with extra features (Cloud storage and more editing)
 |===
 
 === Quality Goals
@@ -32,11 +32,11 @@ Premium Version with extra features (Cloud storage and more editing)
 [options="header",cols="1,1,2,4"]
 |===
 |Priority|Key|Quality|Motivation
-| 1 | | Usability | High usability is a must, if we want to be competitive against the existing platform giants.
-| 2 | | Scalability | Because of our size it is important, that we can scale to serve a massive international audience.
-| 3 | | Auditability | Because of our international operation, auditability is important to be able to respect the various laws.
-| 4 | | Reliability | Reliability is important, because nothing is more annoying to an end user than a page that does not work.
-| 5 | | Portability | To reach the largest audience it is important, that the application can run on most devices.
+| 1 | QG_1 | Usability | High usability is a must, if we want to be competitive against the existing platform giants.
+| 2 | QG_2 | Scalability | Because of our size it is important, that we can scale to serve a massive international audience.
+| 3 | QG_3 | Auditability | Because of our international operation, auditability is important to be able to respect the various laws.
+| 4 | QG_4 | Reliability | Reliability is important, because nothing is more annoying to an end user than a page that does not work.
+| 5 | QG_5 | Portability | To reach the largest audience it is important, that the application can run on most devices.
 |===
 
 === Stakeholders
