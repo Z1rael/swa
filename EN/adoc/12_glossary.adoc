@@ -36,9 +36,43 @@ endif::arc42help[]
 |===
 |Term |Definition
 
-|<Term-1>
+|2FA
+|<definition-2>
+
+|Apache Kafka
+|<definition-2>
+
+|Cloud
+|<definition-2>
+
+|Dart (Language)
+|<definition-2>
+
+|Elastic Search
+|<definition-2>
+
+|Flutter
+|<definition-2>
+
+|HashiCorp Vault
+|<definition-2>
+
+|Kubernetes
+|<definition-2>
+
+|Message Broker
 |<definition-1>
 
-|<Term-2>
+|Metadata
+|<definition-1>
+
+|Microservices
+|<definition-1>
+
+|MongoDB
 |<definition-2>
+
+|Pixlr
+|<definition-2>
+
 |===

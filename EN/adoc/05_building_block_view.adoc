@@ -79,11 +79,11 @@ Contained Building Blocks::
 [options="header",cols="1,4"]
 |===
 |Building block|Description
-| Images | Image searching, viewing, uploading and editing via third-party-apis. 
-| Social-Functions | Liking, Commenting and various other social functions.
-| Usermanagement | Provides various features related to the management of accounts.
+| <<BB_1_Images>> | Image searching, viewing, uploading and editing via third-party-apis. 
+| <<BB_2_Social-Functions>> | Liking, Commenting and various other social functions.
+| <<BB_3_Usermanagement>> | Provides various features related to the management of accounts.
 Also includes tools related to the administration of the users.
-| Copyright | Includes various tools to check for and verify potential copyright issues. 
+| <<BB_4_Copyright>> | Includes various tools to check for and verify potential copyright issues. 
 Also includes workflows for dealing with copyright issues.
 |===
 Important Interfaces::
@@ -129,10 +129,11 @@ Leave out normal, simple, boring or standardized parts of your system
 ****
 endif::arc42help[]
 
-==== White Box - Images BB_1
-image::../../images/SWARC_Building_Block_2.drawio.svg[Whitebox PhotoHive]
+[#BB_1_Images]
+==== BB_1 Images
+image::../../images/SWARC_Building_Block_2.drawio.svg[PhotoHive Images]
 
-The dotted lines show the general request flows, because the majority of the communication is handled via Apache Kafka as a message queue.
+The dotted lines show the general request flows, because the majority of the communication is handled via Apache Kafka as a message broker.
 
 Motivation:: 
 
@@ -174,8 +175,8 @@ part of arc42 for additional levels.
 ****
 endif::arc42help[]
 
-==== White Box Search-Service BB_1.1
-image::../../images/SWARC_Building_Block_3.drawio.svg[Whitebox PhotoHive]
+==== BB_1.1 Search-Service
+image::../../images/SWARC_Building_Block_3.drawio.svg[Images SearchService]
 
 Motivation:: 
 
