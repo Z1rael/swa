@@ -134,11 +134,11 @@ endif::arc42help[]
 | Wants to share, edit and interact with images, wants the application to be fast and usable on different platforms
 
 | Admin
-| System administrators / moderation team (FH Technikum Wien)
+| System administrators / moderation team 
 | Wants to have the necessary tools to moderate the platform, curate a collection of highlighted images and remove problematic content
 
 | Developer
-| SWA development team (FH Technikum Wien)
+| development team 
 | Wants to deliver modular features fast and safely, maintain a clean and extensible architecture
 
 | Influencer
