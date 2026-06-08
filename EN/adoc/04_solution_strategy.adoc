@@ -3,16 +3,16 @@ ifndef::imagesdir[:imagesdir: ../images]
 [[section-solution-strategy]]
 == Solution Strategy
 
-[cols="1,2,1"]
+[cols="1,2"]
 |===
 
-|Goal/Requirements| Architectural Approach| Details
+|Goal/Requirements| Architectural Approach
 
-|Maximize scalability and innovation to become a market leader | Microservices with the goal of Continuous Deployment| 
+|Maximize scalability and innovation to become a market leader | Microservices with the goal of Continuous Deployment
 
-| Runs everywhere high performance and use the advantages of microservices| Frontend: Web APP mit flutter + dart, Backend: Springboot + Java for API server, DB: general Data Storage: PostgresDB Image-Storage: Data Buckets (S3, etc.) DevOps|
+| Runs everywhere high performance and use the advantages of microservices| Frontend: Web APP mit flutter + dart, Backend: Springboot + Java for API server, DB: general Data Storage: PostgresDB Image-Storage: Data Buckets (S3, etc.) DevOps
 
-| Fast global application | Cloud deployment distributed across various locations worldwide|
+| Fast global application | Cloud deployment distributed across various locations worldwide
 
 | Continuous Deployment | Testing Strategies: TDD, A/B-Testing, Chaos-Engineering|
 
