@@ -25,10 +25,18 @@ Motivate what was decided and why it was decided that way,
 based upon problem statement, quality goals and key constraints.
 Refer to details in the following sections.
 
-
 .Further Information
 
 See https://docs.arc42.org/section-4/[Solution Strategy] in the arc42 documentation.
 
 ****
 endif::arc42help[]
+
+[options="header",cols="1,2"]
+|===
+|Goal/Requirements| Architectural Approach|
+Maximize scalability and innovation to become a market leader | Microservices with the goal of Continuous Deployment 
+| Runs everywhere high performance and use the advantages of microservices| Frontend: Web APP mit flutter + dart, Backend: Springboot + Java for API server, DB: general Data Storage: PostgresDB Image-Storage: Data Buckets (S3, etc.)DevOps 
+| Fast global application | Cloud deployment distributed across various locations worldwide 
+| Continuous Deployment | ReliabilTesting Strategies: TDD, A/B-Testing, Chaos-Engineeringity 
+|===
