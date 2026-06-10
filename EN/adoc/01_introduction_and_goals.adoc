@@ -41,7 +41,7 @@ The main purpose of PhotoHive is creating a social media plattform with a focus 
 |Role/Name|Contact|Expectations
 
 | User
-| End users (students / public users)
+| End users 
 | Wants to share, edit and interact with images, wants the application to be fast and usable on different platforms
 
 | Admin
@@ -57,6 +57,6 @@ The main purpose of PhotoHive is creating a social media plattform with a focus 
 | Wants to build an audience, attract other users, grow a community and potentially monetize content
 
 | Legal Team
-| University compliance / legal advisory (GDPR / copyright compliance)
+| legal advisory (GDPR / copyright compliance)
 | Wants the application to adhere to international and local legal requirements to avoid lawsuits, especially regarding personal data and licensing (copyright)
 |===
